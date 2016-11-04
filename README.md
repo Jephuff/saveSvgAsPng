@@ -56,6 +56,7 @@ If you want to use TypeScript, necessary [type definitions](https://github.com/m
 - `width` - Specify the image's width. Defaults to the viewbox's width if given, or the element's non-percentage width, or the element's bounding box's width, or the element's CSS width, or the computed style's width, or 0.
 - `encoderType` - A DOMString indicating the image format. The default type is image/png.
 - `encoderOptions` - A Number between 0 and 1 indicating image quality. The default is 0.8
+- `canvg` - If canvg is passed in, it will be used to write svg to canvas. This will allow support for Internet Explorer
 
 ## Support
 
