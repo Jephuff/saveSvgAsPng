@@ -58,6 +58,13 @@ If you want to use TypeScript, necessary [type definitions](https://github.com/m
 - `encoderOptions` - A Number between 0 and 1 indicating image quality. The default is 0.8
 - `canvg` - If canvg is passed in, it will be used to write svg to canvas. This will allow support for Internet Explorer
 
+### Testing
+
+run tests with `tape`
+```bash
+npm test
+```
+
 ## Support
 
-Internet Explorer is not supported due to the `SecurityError` it throws when calling `toDataURL` on a canvas that's been written to.
+Internet Explorer will only work if [canvg](https://github.com/canvg/canvg) is passed in, otherwise it will throw a `SecurityError` when calling `toDataURL` on a canvas that's been written to. [canvg](https://github.com/canvg/canvg) may have it's own issues with SVG support, so ensure you test the output after switching.
