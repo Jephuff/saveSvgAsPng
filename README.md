@@ -60,7 +60,7 @@ If you want to use TypeScript, necessary [type definitions](https://github.com/m
 
 ### Testing
 
-run tests with `tape`
+run tests with [tape](https://www.npmjs.com/package/tape)
 ```bash
 npm test
 ```
